@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('myimg.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            align-content: center;
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        section {
+            border-width: 3px;
+
+            border-radius: 3px;
+        }
+        .call{
+            position: absolute;
+            top: 70px;
+            left: 723px;
+            opacity: 10%;
+            z-index: 2;
+        }
+        .Book{
+            position: relative;
+            z-index: 50;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand text-warning">
+                YAV
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="border-warning" style="background-color :aliceblue;">Schedule a call </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="border-warning" style="background-color: aliceblue;"> Hire With Us</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="container w-50 bg-light-subtle mt-3 border border-warning ">
+
+        <form novalidate onsubmit="onsignup(event)">
+
+
+            <div class="container">
+
+                <h2 class = "Book" style="color: orange; text-align: center ">Book A Call</h2>
+                <h1 class = "call">CALL</h1>
+                <div class="container-sm">
+                    <p style="text-align: center;"> book a call slot and our representative will call you within 1 hr of
+                        selected time </p>
+                </div>
+
+                <hr>
+            </div>
+
+            <label for="fname" class="form-label">Name:</label>
+            <input type="text" id="fname" name="fname" class="form-control" required>
+            <label for="lname" class="form-label">Email:</label>
+            <input type="text" id="email" name="email" class="form-control" placeholder="Email" required>
+            <label for="phone" class="form-label">Phone</label>
+            <input type="number" id="phone" name="phone" class="form-control" required>
+            <label for="tfc" class="form-label">Time For Call</label>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <input type="date" id="tfc" name="Date" value="22-11-2020" class="form-control">
+                </div>
+                <div class="col">
+                    <input type="time" id="tfc" name="time" value="12:00" class="form-control">
+                </div>
+            </div>
+
+
+
+            <div class="btn-group mt-3 mb-2 col-12">
+                <button type="submit" class="btn btn-warning">GET A CALL</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
